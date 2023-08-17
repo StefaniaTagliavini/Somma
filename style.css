@@ -1,0 +1,96 @@
+* {
+  margin: 0;
+  padding: 0;
+  color: black;
+  box-sizing: border-box;
+  font-family: "Roboto", sans-serif;
+}
+
+body {
+  background: radial-gradient(
+    circle,
+    rgba(238, 174, 202, 1) 0%,
+    rgba(148, 187, 233, 1) 100%
+  );
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-areas:
+    "titolo titolo"
+    "sottotitolo sottotitolo";
+}
+
+.content {
+  margin-top: 20%;
+}
+
+.titolo {
+  grid-area: titolo;
+  background-color: rgba(254, 240, 255, 0.233);
+  border-radius: 10px 10px 0px 0px;
+  width: 80%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: auto;
+  font-size: 1.2rem;
+}
+
+.somma {
+  grid-area: sottotitolo;
+  background-color: rgba(254, 240, 255, 0.233);
+  border-radius: 0px 0px 10px 10px;
+  width: 80%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: auto;
+  gap: 0.5rem;
+  font-size: 5rem;
+}
+
+.operator {
+  color: black;
+}
+
+input {
+  border: none;
+  background-color: transparent;
+  border-radius: 5px;
+  width: 100%;
+  text-align: center;
+  height: 8rem;
+  font-size: 100%;
+  color: black;
+}
+
+input::placeholder {
+  color: black;
+}
+
+input:focus {
+  outline: none;
+}
+
+@media screen and (max-width: 1300px) {
+  .content {
+    margin-top: 35%;
+  }
+  input {
+    font-size: 70%;
+  }
+  .operator {
+    font-size: 70%;
+  }
+}
+
+@media screen and (max-width: 900px) {
+  .content {
+    margin-top: 45%;
+  }
+  input {
+    font-size: 60%;
+  }
+  .operator {
+    font-size: 60%;
+  }
+}

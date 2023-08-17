@@ -1,0 +1,37 @@
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;700&display=swap"
+      rel="stylesheet"
+    />
+    <title>Addizione</title>
+  </head>
+  <style>
+    input::-webkit-outer-spin-button,
+    input::-webkit-inner-spin-button {
+      display: none;
+    }
+  </style>
+
+  <body>
+    <div class="content">
+      <div class="titolo">
+        <h1>Ti aiuto a fare la somma:</h1>
+      </div>
+      <div class="somma">
+        <input type="number" oninput="somma()" id="num1" placeholder="0" />
+        <span class="operator">+</span>
+        <input type="number" oninput="somma()" id="num2" placeholder="0" />
+        <span class="operator">=</span>
+        <input type="number" id="result" placeholder="0" disabled />
+      </div>
+    </div>
+  </body>
+
+  <script src="script.js"></script>
+</html>
